@@ -154,7 +154,7 @@ nav a {
     url(../images/img/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
 }
 .hero button {
@@ -244,7 +244,10 @@ nav a {
   position: absolute;
   bottom: 0px;
   height: 70px;
-  padding: 27px 82px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-weight: 700;
   font-size: 14px;
@@ -323,7 +326,7 @@ nav a {
   justify-content: center;
 }
 .social-links {
-  color: var(--secondary-text-color);
+  color: var(--icon-color);
 
   display: flex;
   justify-content: center;
@@ -375,6 +378,7 @@ nav a {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
+.clients a:focus,
 .clients a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -432,7 +436,7 @@ address li:first-child a {
 .footer-social-links > svg {
   fill: #fff;
 }
-/* ------------- Modal window backdrop */
+/* ------------- Modal window backdrop ------------- */
 .backdrop {
   position: fixed;
   width: 100vw;
